@@ -4,16 +4,18 @@ using namespace std;
 int main()
 {
     int n;
-    // TODO: ask user for input
-
-    // TODO: outer loop for each row
-
-        // TODO: inner loop to print letters for this row
-
-            // TODO: print the letter for this column
-
-        // TODO: print newline after each row
-
-
+    
+    cout << "Input: ";
+    cin >> n;
+    
+    for (int i =1; i <=n; i++){
+        for (int j =0; j < i; j++){
+            cout << char('A' + j);
+            if (j < i -1){
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
     return 0;
 }
